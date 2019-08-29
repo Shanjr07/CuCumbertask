@@ -6,7 +6,7 @@ Feature: Adding Customer
   Scenario: Create an unique Customer Id
     Given User should launch the browser
     And user click add customer option
-    When User giving the data for the Addcustomer option
+    When User giving the data for the Addcustomer option2
     
     |name|jaga|
     |last|shan|

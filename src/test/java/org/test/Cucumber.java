@@ -28,8 +28,8 @@ public class Cucumber {
 		dri.findElement(By.xpath("//a[text()='Add Tariff Plan']")).click();
 	}
 
-	/*@When("User giving the data for the Adding tariff panning option")
-	public void user_giving_the_data_for_the_Adding_tariff_panning_option(io.cucumber.datatable.DataTable dataTable) {
+	@When("User giving the data for the Adding tariff panning option1")
+	public void user_giving_the_data_for_the_Adding_tariff_panning_option1(io.cucumber.datatable.DataTable dataTable) {
 	List<List<String>> data= dataTable.asLists(String.class); 
 	//dri.findElement(By.xpath("//label[text()='Done']")).click();
 	dri.findElement(By.id("rental1")).sendKeys(data.get(0).get(0));
@@ -41,9 +41,9 @@ public class Cucumber {
 	dri.findElement(By.id("sms_charges")).sendKeys(data.get(1).get(6));
 	
 	}
-	*/
-	@When("User giving the data for the Adding tariff panning option")
-	public void user_giving_the_data_for_the_Adding_tariff_panning_option(io.cucumber.datatable.DataTable dataTable1) {
+	
+	@When("User giving the data for the Adding tariff panning option2")
+	public void user_giving_the_data_for_the_Adding_tariff_panning_option2(io.cucumber.datatable.DataTable dataTable1) {
 		List<Map<String,String>> data= dataTable1.asMaps(String.class,String.class); 
 		//dri.findElement(By.xpath("//label[text()='Done']")).click(); 
 		dri.findElement(By.id("rental1")).sendKeys(data.get(0).get("retail"));
@@ -56,8 +56,8 @@ public class Cucumber {
 		
 		}
 	
-	@When("User click the submit button")
-	public void user_click_the_submit_button() {
+	@When("User click the submit button1")
+	public void user_click_the_submit_button1() {
 		dri.findElement(By.name("submit")).click();   
 	}
 	@Then("verify the tariff plan added")
@@ -70,12 +70,12 @@ public class Cucumber {
 	}
 
 
-/*	@Given("user click add customer option")
+	@Given("user click add customer option")
 	public void user_click_add_customer_option() {
 		dri.findElement(By.xpath("(//a[text()='Add Customer'])[1]")).click();
 	  }
 
-	/*@When("User giving the data for the Addcustomer option")
+	@When("User giving the data for the Addcustomer option")
 	public void user_giving_the_data_for_the_Addcustomer_option() {
 		dri.findElement(By.xpath("//label[text()='Done']")).click();
 		dri.findElement(By.id("fname")).sendKeys("a");
@@ -85,8 +85,8 @@ public class Cucumber {
 		dri.findElement(By.id("telephoneno")).sendKeys("7896545632");
 		
 		
-	}*/
-/*
+	}
+
 	@When("User Provide Vaild Details {string},{string},{string},{string},{string}")
 	public void user_Provide_Vaild_Details(String name, String last, String mail, String address, String phoneno) {
 		dri.findElement(By.xpath("//label[text()='Done']")).click();
@@ -95,10 +95,10 @@ public class Cucumber {
 		dri.findElement(By.id("email")).sendKeys(mail);
 		dri.findElement(By.xpath("//textarea[@id='message']")).sendKeys(address);
 		dri.findElement(By.id("telephoneno")).sendKeys(phoneno);
-	}*/
+	}
 
-	/*@When("User giving the data for the Addcustomer option")
-	public void user_giving_the_data_for_the_Addcustomer_option(io.cucumber.datatable.DataTable dataTab) {
+	@When("User giving the data for the Addcustomer option1")
+	public void user_giving_the_data_for_the_Addcustomer_option1(io.cucumber.datatable.DataTable dataTab) {
 	   List<String> data = dataTab.asList(String.class);
 	   dri.findElement(By.xpath("//label[text()='Done']")).click();
 		dri.findElement(By.id("fname")).sendKeys(data.get(0));
@@ -109,8 +109,8 @@ public class Cucumber {
 
 	   
 	}
-/@When("User giving the data for the Addcustomer option")
-public void user_giving_the_data_for_the_Addcustomer_option(io.cucumber.datatable.DataTable dataTab) {
+@When("User giving the data for the Addcustomer option2")
+public void user_giving_the_data_for_the_Addcustomer_option2(io.cucumber.datatable.DataTable dataTab) {
  
 	   Map<String,String> data = dataTab.asMap(String.class,String.class);
 	   dri.findElement(By.xpath("//label[text()='Done']")).click();
@@ -122,7 +122,7 @@ public void user_giving_the_data_for_the_Addcustomer_option(io.cucumber.datatabl
 
 	   
 	}
-//a[text()='Add Tariff Plan']
+
 	@When("User click the submit button")
 	public void user_click_the_submit_button() {
 		dri.findElement(By.name("submit")).click();   
@@ -133,5 +133,5 @@ public void user_giving_the_data_for_the_Addcustomer_option(io.cucumber.datatabl
 		Assert.assertTrue(dri.findElement(By.xpath("(//td[@align='center'])[2]")).isDisplayed());
 	   }
 
-*/
+
 }

@@ -6,12 +6,12 @@ Feature: Adding Tariff plan
   Scenario: Adding Traffing plan
     Given User should launch the browser
     And user click add traffing option
-    When User giving the data for the Adding tariff panning option
+    When User giving the data for the Adding tariff panning option1
     
     |300|30|30|300|1|10|5|
     |350|35|35|400|2|20|7|
     
-    And User click the submit button
+    And User click the submit button1
     Then verify the tariff plan added 
 
 
