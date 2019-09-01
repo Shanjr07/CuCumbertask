@@ -4,7 +4,7 @@ Feature: Adding Customer
 
   @tag1
   Scenario: Create an unique Customer Id
-    Given User should launch the browser
+    
     And user click add customer option
     When User giving the data for the Addcustomer option
     And User click the submit button

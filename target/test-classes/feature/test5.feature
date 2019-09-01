@@ -4,7 +4,7 @@ Feature: Adding Tariff plan
 
   @tag1
   Scenario: Adding Traffing plan
-    Given User should launch the browser
+   
     And user click add traffing option
     When User giving the data for the Adding tariff panning option1
     

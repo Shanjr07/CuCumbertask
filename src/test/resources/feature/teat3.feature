@@ -2,9 +2,9 @@
 Feature: Adding Customer
   I want to use this template for my feature file
 
-  @tag1
+  @tag1 @tag2
   Scenario: Create an unique Customer Id
-    Given User should launch the browser
+    
     And user click add customer option
     When User giving the data for the Addcustomer option1
     

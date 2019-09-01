@@ -2,9 +2,9 @@
 Feature: Adding Tariff plan
   I want to use this template for my feature file
 
-  @tag1
+  @tag2
   Scenario: Adding Traffing plan
-    Given User should launch the browser
+   
     And user click add traffing option
     When User giving the data for the Adding tariff panning option2
     |retail|loalmin|intmin|sms|lcharg|intcharg|smscharge|

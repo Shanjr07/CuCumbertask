@@ -19,17 +19,13 @@ formatter.scenario({
     },
     {
       "name": "@tag1"
+    },
+    {
+      "name": "@tag2"
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -83,6 +79,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/test1.feature");
 formatter.feature({
   "name": "Adding Customer",
@@ -107,14 +106,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -157,6 +149,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/test2.feature");
 formatter.feature({
   "name": "Adding Customer",
@@ -177,10 +172,6 @@ formatter.scenarioOutline({
       "name": "@tag2"
     }
   ]
-});
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
 });
 formatter.step({
   "name": "user click add customer option",
@@ -245,14 +236,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -295,6 +279,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Create an unique Customer Id",
   "description": "",
@@ -308,14 +295,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -358,6 +338,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/test4.feature");
 formatter.feature({
   "name": "Adding Customer",
@@ -378,18 +361,14 @@ formatter.scenario({
       "name": "@tag"
     },
     {
+      "name": "@tag2"
+    },
+    {
       "name": "@tag1"
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -464,6 +443,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/test5.feature");
 formatter.feature({
   "name": "Adding Tariff plan",
@@ -488,14 +470,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -562,6 +537,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/test6.feature");
 formatter.feature({
   "name": "Adding Tariff plan",
@@ -582,18 +560,11 @@ formatter.scenario({
       "name": "@tag"
     },
     {
-      "name": "@tag1"
+      "name": "@tag2"
     }
   ]
 });
-formatter.step({
-  "name": "User should launch the browser",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Cucumber.user_should_launch_the_browser()"
-});
-formatter.result({
+formatter.before({
   "status": "passed"
 });
 formatter.step({
@@ -669,6 +640,9 @@ formatter.match({
   "location": "Cucumber.verify_the_tariff_plan_added()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
